@@ -7,11 +7,11 @@ public class Drive : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(0, 0, 8f * Time.deltaTime);
+        transform.position += new Vector3(0, 0, 16f * Time.deltaTime);
 
         foreach (var wheel in wheels)
         {
-            wheel.transform.Rotate(300f * Time.deltaTime, 0, 0);
+            wheel.transform.Rotate(520f * Time.deltaTime, 0, 0);
         }
     }
 }
